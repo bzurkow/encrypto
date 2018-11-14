@@ -1,7 +1,9 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
+
+import rooms from './rooms';
 
 const rootReducer = combineReducers({
-  auth: require('./auth').default,
+	rooms
 })
 
 export default rootReducer
