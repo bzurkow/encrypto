@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import Header from './Header';
-import Sidebar from './Sidebar';
-import TextArea from './TextArea';
+import Header from './Header'
+import Sidebar from './Sidebar'
+import TextArea from './TextArea'
 
 class App extends Component {
 	render(){
@@ -14,7 +14,7 @@ class App extends Component {
 			</div>
 			)
 	}
-};
+}
 
 const styles = {
 	app: {

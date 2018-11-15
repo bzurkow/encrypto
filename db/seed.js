@@ -16,9 +16,9 @@ function seedEverything() {
 
 const messages = seed(Message, {
   one: {
-    name: "Ben",
-    room: "ben",
-    message: "ben"
+    name: 'Ben',
+    room: 'ben',
+    message: 'ben'
   }
 })
 

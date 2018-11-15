@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Drawer from '@material-ui/core/Drawer';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import Drawer from '@material-ui/core/Drawer'
 
 class Sidebar extends Component {
 	constructor(props){
-		super(props);
-	};
+		super(props)
+	}
 
 	render(){
 		return(
@@ -13,8 +13,8 @@ class Sidebar extends Component {
 				<h1>Sidebar</h1>
 			</div>
 			)
-	};
-};
+	}
+}
 
 const styles = {
 	paper: {
@@ -26,4 +26,4 @@ const styles = {
 	}
 }
 
-export default Sidebar;
+export default Sidebar

@@ -1,27 +1,26 @@
-/*---------- INITIAL STATE ----------*/
-const initialState = [];
+/* ---------- INITIAL STATE ---------- */
+const initialState = []
 
-/*---------- ACTION TYPES ----------*/
+/* ---------- ACTION TYPES ---------- */
 const ADD_ROOM = 'ADD_ROOM'
 
-/*---------- ACTION CREATORS ----------*/
+/* ---------- ACTION CREATORS ---------- */
 
 export const addRoom = room => ({
-	type: ADD_ROOM,
-	room
-});
+  type: ADD_ROOM,
+  room
+})
 
-/*---------- THUNK CREATORS ----------*/
+/* ---------- THUNK CREATORS ---------- */
 
-/*---------- REDUCER ----------*/
+/* ---------- REDUCER ---------- */
 
 export default (state = initialState, action) => {
-	let newState = Object.assign(state)
-
-	switch (action.type) {
-		case ADD_ROOM:
-			newState.push(action.room);
-			return newState;
-		default: return state;
+  let newState = Object.assign(state)
+  switch (action.type) {
+    case ADD_ROOM:
+      newState.push(action.room)
+    return newState
+	default: return state
 	}
-};
+}

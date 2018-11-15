@@ -6,4 +6,4 @@ module.exports = db => db.define('messages', {
   name: STRING,
   message: TEXT,
   room: STRING
-});
+})

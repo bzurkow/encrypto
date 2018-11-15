@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Navbar } from 'react-bootstrap';
+import React, { Component } from 'react'
+import { Navbar } from 'react-bootstrap'
 
 const Header = () => (
 	<Navbar style={styles.appbar}>
