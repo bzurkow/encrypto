@@ -16,11 +16,11 @@ export const addRoom = room => ({
 /* ---------- REDUCER ---------- */
 
 export default (state = initialState, action) => {
-  let newState = Object.assign(state)
+  const newState = Object.assign(state)
   switch (action.type) {
-    case ADD_ROOM:
-      newState.push(action.room)
+  case ADD_ROOM:
+    newState.push(action.room)
     return newState
-	default: return state
-	}
+  default: return state
+  }
 }
