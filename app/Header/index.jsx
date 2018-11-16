@@ -13,7 +13,6 @@ const styles = {
   appbar: {
     backgroundColor: '#000',
     color: '#fff',
-    fontFamily: 'roboto',
     padding: '0 10%',
     borderColor: '#000',
     borderRadius: '0px',

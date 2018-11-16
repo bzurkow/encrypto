@@ -6,7 +6,11 @@ class TextArea extends Component {
   render() {
     return (
       <div style={styles.paper}>
-        <h1>text area</h1>
+        {
+          !this.props.rooms
+          ? <h1 style={styles.noRooms}>No room selected<br />Select or Join a room to get started</h1>
+          : <h1>stuff</h1>
+        }
       </div>
     )
   }
@@ -21,7 +25,20 @@ const styles = {
     width: width,
     float: 'right',
     height: `calc(100vh - 71px)`,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start'
+  },
+  noRooms: {
+    width: '65%',
+    marginTop: '40%',
+    textAlign: 'center'
   }
 }
+
+const mapStateToProps = state => ({
+  rooms: state.rooms.length
+})
 
 export default TextArea

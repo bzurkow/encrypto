@@ -18,6 +18,7 @@ class App extends Component {
 
 const styles = {
   app: {
+    fontFamily: 'roboto',
   }
 }
 
